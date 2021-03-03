@@ -3,7 +3,6 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author abarrios
@@ -17,7 +16,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        PilaLista<String> lista = new PilaLista<>();
+        ListaCola<String> lista = new ListaCola<>();
 
         c.println("Ingrese la cantidad de nombres: ");
 

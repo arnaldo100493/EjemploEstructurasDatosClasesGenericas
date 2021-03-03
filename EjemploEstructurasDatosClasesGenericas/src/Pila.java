@@ -13,13 +13,12 @@ public interface Pila<E> extends Coleccion<E>{
     @Override
     public boolean estaVacia();
     
-    public boolean poner(E elemento);
+    public void poner(E elemento);
     
     public E quitar();
     
     public E cima();
     
-    public E buscar(Object objeto);
-    
     public String imprimir();
+    
 }

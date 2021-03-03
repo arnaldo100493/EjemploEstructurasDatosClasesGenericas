@@ -11,13 +11,6 @@
 public interface Coleccion<E> {
 
     public boolean estaVacia();
-
-    public boolean contiene(Object objeto);
-
-    public int tamanio();
-
-    public boolean agregar(E elemento);
-
-    public boolean remover(Object objeto);
+    
 
 }

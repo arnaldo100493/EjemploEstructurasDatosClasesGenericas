@@ -73,5 +73,4 @@ public class Nodo<E> {
     public void setSiguiente(Nodo<E> siguiente) {
         this.siguiente = siguiente;
     }
-
 }
