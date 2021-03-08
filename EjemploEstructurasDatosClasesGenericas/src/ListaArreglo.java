@@ -97,7 +97,7 @@ public class ListaArreglo<E> implements Lista<E> {
 
     public boolean eliminar(E elemento) {
         for (int i = 0; i < this.tamanio; i++) {
-            if (listadoElementos[i].equals(elemento)) {
+            if (this.listadoElementos[i].equals(elemento)) {
                 this.reemplazar(i);
             }
         }
