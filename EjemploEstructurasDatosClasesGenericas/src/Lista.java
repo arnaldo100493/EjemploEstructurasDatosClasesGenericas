@@ -1,20 +1,19 @@
-
-import java.util.Iterator;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 /**
  *
  * @author abarrios
  */
-public interface Coleccion<E> extends Iterable<E> {
-
-    public boolean estaVacia();
+public interface Lista<E> extends Coleccion<E> {
 
     @Override
-    public Iterator<E> iterator();
+    public boolean estaVacia();
+    
+    public boolean agregar(E elemento);
+   
 
 }

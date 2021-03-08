@@ -16,18 +16,7 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        ListaCola<String> lista = new ListaCola<>();
-
-        c.println("Ingrese la cantidad de nombres: ");
-
-        int cantidadNombres = c.readInt();
-
-        for (int i = 1; i <= cantidadNombres; i++) {
-            String nombre = "P" + i;
-            lista.poner(nombre);
-        }
-
-        c.println(lista.imprimir());
+        ListaArreglo<String> lista = new ListaArreglo<>();
 
     }
 }

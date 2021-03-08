@@ -1,9 +1,11 @@
+
+import java.util.Iterator;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author abarrios
@@ -58,6 +60,11 @@ public class ListaCola<E> implements Cola<E> {
             this.poner(listaColaAuxiliar.quitar());
         }
         return s;
+    }
+
+    @Override
+    public Iterator<E> iterator() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
 }
