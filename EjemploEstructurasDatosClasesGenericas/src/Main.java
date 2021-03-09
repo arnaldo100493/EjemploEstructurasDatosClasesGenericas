@@ -18,5 +18,26 @@ public class Main {
         // TODO code application logic here
         ListaArreglo<String> lista = new ListaArreglo<>();
 
+        lista.agregar("Arnaldo");
+        lista.agregar("Andres");
+        lista.agregar("Barrios");
+        lista.agregar("Mena");
+
+        for (Object elemento : lista.listar()) {
+            c.println("" + elemento);
+        }
+        
+        c.println("");
+
+        String consultarElemento = lista.consultar("Arnaldo");
+
+        if (consultarElemento != null) {
+            lista.setElemento("ArnaldoAndres");
+            for (Object elemento : lista.listar()) {
+                c.println("" + elemento);
+            }
+        } else {
+            c.println("No existe");
+        }
     }
 }

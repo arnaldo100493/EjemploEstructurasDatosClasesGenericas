@@ -34,6 +34,14 @@ public class ListaArreglo<E> implements Lista<E> {
         return this.tamanio == -1;
     }
 
+    public void setElemento(E elemento) {
+        this.listadoElementos[this.tamanio] = elemento;
+    }
+
+    public E getElemento() {
+        return (E) this.listadoElementos[this.tamanio];
+    }
+
     @Override
     public boolean agregar(E elemento) {
         this.listadoElementos[this.tamanio] = elemento;
@@ -78,26 +86,26 @@ public class ListaArreglo<E> implements Lista<E> {
         return elementosConsultados;
     }
 
-    public boolean modificar(E elemento) {
+    public boolean modificar(Object modificarElemento) {
         for (int i = 0; i < this.tamanio; i++) {
-            if (this.listadoElementos[i].equals(elemento)) {
-                this.listadoElementos[i] = elemento;
+            if (this.listadoElementos[i].equals(modificarElemento)) {
+                this.listadoElementos[this.tamanio] = modificarElemento;
             }
         }
         return true;
     }
 
-    private void reemplazar(int r) {
-        for (int i = r; i < this.tamanio - 1; i++) {
+    private void reemplazar(int in) {
+        for (int i = in; i < this.tamanio - 1; i++) {
             this.listadoElementos[i] = this.listadoElementos[i + 1];
-            this.listadoElementos[this.tamanio - 1] = null;
         }
+        this.listadoElementos[this.tamanio - 1] = null;
         this.tamanio--;
     }
 
-    public boolean eliminar(E elemento) {
+    public boolean eliminar(Object eliminarElemento) {
         for (int i = 0; i < this.tamanio; i++) {
-            if (this.listadoElementos[i].equals(elemento)) {
+            if (this.listadoElementos[i].equals(eliminarElemento)) {
                 this.reemplazar(i);
             }
         }
