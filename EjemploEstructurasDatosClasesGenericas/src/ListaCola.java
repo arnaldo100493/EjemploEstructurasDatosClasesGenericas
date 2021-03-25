@@ -48,6 +48,24 @@ public class ListaCola<E> implements Cola<E> {
     }
 
     @Override
+    public E getPrimero() {
+        E elemento = null;
+        if (!this.estaVacia()) {
+            elemento = this.primero.getElemento();
+        }
+        return elemento;
+    }
+
+    @Override
+    public E getUltimo() {
+        E elemento = null;
+        if (!this.estaVacia()) {
+            elemento = this.ultimo.getElemento();
+        }
+        return elemento;
+    }
+
+    @Override
     public String imprimir() {
         String s = "";
         ListaCola<E> listaColaAuxiliar = new ListaCola<>();

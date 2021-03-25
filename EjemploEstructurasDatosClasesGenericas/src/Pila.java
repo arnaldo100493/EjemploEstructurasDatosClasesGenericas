@@ -17,7 +17,7 @@ public interface Pila<E> extends Coleccion<E>{
     
     public E quitar();
     
-    public E cima();
+    public E getCima();
     
     public String imprimir();
     

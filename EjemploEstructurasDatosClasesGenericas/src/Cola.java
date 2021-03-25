@@ -17,6 +17,10 @@ public interface Cola<E> extends Coleccion<E> {
 
     public E quitar();
 
+    public E getPrimero();
+
+    public E getUltimo();
+
     public String imprimir();
 
 }

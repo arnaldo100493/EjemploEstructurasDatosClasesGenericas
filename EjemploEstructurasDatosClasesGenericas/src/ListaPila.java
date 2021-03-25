@@ -46,7 +46,7 @@ public class ListaPila<E> implements Pila<E> {
     }
 
     @Override
-    public E cima() {
+    public E getCima() {
         E elemento = null;
         if (!this.estaVacia()) {
             elemento = this.tope.getElemento();
